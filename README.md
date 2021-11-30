@@ -21,18 +21,18 @@ make -j4
 ## Usage
 
 ### SMPL Model
-Download the [SMPL model](https://smpl.is.tue.mpg.de/) and extract these```.pkl``` files to [```SCOPE/model```](model).
+Download the [SMPL model](https://smpl.is.tue.mpg.de/) and extract these```.pkl``` files to [```$SCOPE_ROOT/model```](model).
 
 
 ### Preprocess
 ```shell
-cd $SCOPE/model
+cd $SCOPE_ROOT/model
 python3 preprocess.py smpl_male.npz YOUR_SMPL_MALE.pkl
 ```
 
 ### Run
 ```shell
-cd $SCOPE
+cd $SCOPE_ROOT
 ./build/bin/run --model ./model/smpl_male.npz --prior ./model/joint_prior.json --keypoint ./examples/keypoints.json --result ./examples/results.json
 ```
 
