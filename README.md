@@ -17,7 +17,19 @@ cd build
 cmake ../C++
 make -j4
 ```
+
 ## Usage
+
+### SMPL Model
+Download the [SMPL model](https://smpl.is.tue.mpg.de/) and extract these```.pkl``` files to [```SCOPE/model```](model).
+
+
+### Preprocess
+```shell
+cd $SCOPE/model
+python3 preprocess.py smpl_male.npz YOUR_SMPL_MALE.pkl
+```
+
 ### Run
 ```shell
 cd $SCOPE
