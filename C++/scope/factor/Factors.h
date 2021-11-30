@@ -1,0 +1,22 @@
+#pragma once
+
+#include <scope/factor/Factor.h>
+#include <scope/factor/EulerAngleConstFactor.h>
+#include <scope/factor/FullJointExtraPinholeCameraFactor.h>
+#include <scope/factor/FullJointPinholeCameraFactor.h>
+#include <scope/factor/FullVertexExtraPinholeCameraFactor.h>
+#include <scope/factor/FullVertexPinholeCameraFactor.h>
+#include <scope/factor/JointConstFactor.h>
+#include <scope/factor/JointDepthCameraFactor.h>
+#include <scope/factor/JointFactor.h>
+#include <scope/factor/JointLimitFactor.h>
+#include <scope/factor/JointPinholeCameraFactor.h>
+#include <scope/factor/ParameterFactor.h>
+#include <scope/factor/PoseConstFactor.h>
+#include <scope/factor/PoseFactor.h>
+#include <scope/factor/RelPOFFactor.h>
+#include <scope/factor/ScaledPOFFactor.h>
+#include <scope/factor/UnitPOFFactor.h>
+#include <scope/factor/VertexDepthCameraFactor.h>
+#include <scope/factor/VertexExtraPinholeCameraFactor.h>
+#include <scope/factor/VertexPinholeCameraFactor.h>
