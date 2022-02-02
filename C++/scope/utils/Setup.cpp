@@ -192,7 +192,7 @@ int loadKeyPoint2DMeasurements(const std::string &file,
     exit(-1);
   }
 
-  Measurements = Eigen::Map<Eigen::Matrix3X<double>>(
+  Measurements = Eigen::Map<Eigen::Matrix<double, 3, Eigen::Dynamic>>(
                      measurements.data<double>(), measurements.shape[1],
                      measurements.shape[0])
                      .cast<Scalar>();
@@ -213,7 +213,7 @@ int loadKeyPoint3DMeasurements(const std::string &file,
     exit(-1);
   }
 
-  Measurements = Eigen::Map<Eigen::Matrix3X<double>>(
+  Measurements = Eigen::Map<Eigen::Matrix<double, 3, Eigen::Dynamic>>(
                      measurements.data<double>(), measurements.shape[1],
                      measurements.shape[0])
                      .cast<Scalar>();
